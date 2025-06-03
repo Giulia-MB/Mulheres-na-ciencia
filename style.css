@@ -1,0 +1,433 @@
+@font-face {
+  font-family: 'Gliker';
+  src: url('Gliker-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.ul_home {
+  background: #dcefee;
+  border-radius: 20px;
+  padding-right: 260px;
+  margin: 0 35px 0 35px;
+}
+
+.lista_home a {
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lista_home {
+  background: #dcefee;
+  list-style-image: url("imagens/marcador.png");
+  text-align: left;
+  font-size: 20px;
+  color: #02373a;
+  font-family: now;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.lista_home a:hover {
+  color: #fca382;
+}
+
+#home {
+  height: 633px;
+}
+
+#container {
+  background: #668c61;
+  display: flex;
+  border: none;
+}
+
+#categorias {
+  margin: 50px;
+  margin-top: 70px;
+}
+
+/* Formatação da barra de navegação "História" */
+
+.body_historia, .body_sobre {
+  font-family: now;
+  margin: 0;
+  background-color: #f4e3dd;
+  color: #668c60;
+  position: relative;
+
+}
+
+.header_historia, .header_sobre {
+  background-color: #ffffff;
+  border: 0.5px solid #668c60;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.logo img {
+  height: 130px;
+  min-width: 75px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #668c60;
+  font-size: 23px;
+  font-family: now;
+}
+
+.menu li a:hover {
+  color: #fe8687;
+}
+
+.botao-sobre:hover {
+  color: white !important;
+  /* serve para que, ao passar o mouse sobre o botão, não aplique a mesma formatãção de todos os links normais */
+}
+
+.menu li a.active {
+  color: #fe8687;
+  border-bottom: 3px solid #fe8687;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.duas-linhas {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.botao-sobre {
+  margin-left: 20px;
+  background-color: #fca382;
+  color: #668c60;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* Formatação do conteúdo da página "História"*/
+#vidraria {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  height: auto;
+  max-height: 20vh;
+  z-index: -1;
+}
+
+#silhueta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 58vh;
+  z-index: -1;
+}
+
+#tabela-periodica {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 98vh;
+  z-index: -1;
+}
+
+.conteudo-historia {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.titulo-historia {
+  font-family: 'Gliker', sans-serif;
+  font-size: 3em;
+  color: #668c60;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  background-image: url('imagens/detalhe-titulo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 30px 0;
+}
+
+.introducao-historia, .historia-instituicoes {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.8;
+  color: #668c60;
+  margin-bottom: 10px;
+}
+
+.imagem-marie-curie {
+  height: 120px;
+  min-width: 75px;
+}
+
+.container-marie-curie, .container-marie-curie-instituicoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.legenda-marie-curie {
+  margin: 0;
+  margin-top: 7px;
+  font-family: 'Gliker', sans-serif;
+  font-size: 25px;
+  color: #668c60;
+  text-align: center;
+}
+
+.data-marie-curie {
+  margin: 0;
+  font-family: 'Gliker', sans-serif;
+  font-size: 20px;
+  color: #668c60;
+  text-align: center;
+}
+
+.video-marie-curie {
+  margin-bottom: 40px;
+}
+
+.lista-instituicoes {
+  text-align: justify;
+}
+
+.li-instituicoes {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Formatação do conteúdo da página "Sobre nós"*/
+.botao-sobre-selecionado {
+  margin-left: 20px;
+  background-color: #fca382;
+  color: #668c60;
+  padding: 8px 18px;
+  border: 6px solid #668c60;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.botao-sobre-selecionado:hover {
+  color: white !important;
+  /* serve para que, ao passar o mouse sobre o botão, não aplique a mesma formatãção de todos os links normais */
+}
+
+.quem-desenvolveu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+
+.quem-desenvolveu-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.conteudo-quem-desenvolveu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.titulo-quem-desenvolveu, .titulo-formulario {
+  width: 300px;
+  font-family: 'Gliker', sans-serif;
+  font-size: 1.5em;
+  color: #668c60;
+  margin-bottom: 10px;
+  position: relative;
+  background-image: url('imagens/detalhe-titulo.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  padding: 30px 30px 30px 20px;
+  text-align: center;
+}
+
+.nome-quem-desenvolveu {
+  margin-top: 5px;
+  font-size: 1.8em;
+  text-align: left;
+}
+
+.introducao-quem-desenvolveu {
+  font-size: 1.2em;
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.8;
+  color: #668c60;
+  margin-bottom: 10px;
+}
+
+.titulo-contato {
+  width: 300px;
+  font-family: 'Gliker', sans-serif;
+  font-size: 1.8em;
+  color: #668c60;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  background-image: url('imagens/detalhe-titulo.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  padding: 30px;
+  text-align: center;
+}
+
+.contatos {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.contatos a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contatos li {
+  display: flex;
+  align-items: center;
+  color: #668c60;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contatos img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.imagem-quem-desenvolveu {
+  flex-shrink: 0;
+  max-width: 300px;
+  align-self: flex-start;
+}
+
+.imagem-quem-desenvolveu img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+form {
+  margin: 20px 0;
+}
+
+
+form label, form legend {
+  color: #668c60;
+  font-family: now;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  font-family: now;
+  background: #dcefee;
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  width: 70%;
+  border: 2px solid #668c60;
+  border-radius: 25px;
+}
+
+.horario {
+  margin-top: 10px;
+}
+
+option, select {
+  color: #668c60;
+  padding: 5px;
+  border-color: #668c60;
+  border-radius: 5px;
+  width: 100px;
+  font-family: now;
+  background: #dcefee;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  font-family: now;
+  width: 30%;
+  padding: 15px 0;
+  background-color: #fca382;
+  color: #668c60;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #668c60;
+  border-radius: 25px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  font-family: now;
+  background: #fca382;
+  border: 3px solid #668c60;
+  border-radius: 25px;
+  color: white;
+  transform: scale(1.2);
+}
