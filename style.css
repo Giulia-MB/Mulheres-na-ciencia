@@ -206,6 +206,12 @@ a:visited {
 .imagem-marie-curie {
   height: 120px;
   min-width: 75px;
+  opacity: 0.5;
+  transition: 400ms;
+}
+
+.imagem-marie-curie:hover {
+  opacity: 1;
 }
 
 .container-marie-curie, .container-marie-curie-instituicoes {
@@ -243,6 +249,14 @@ a:visited {
 .li-instituicoes {
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+.mapa-borges-da-costa {
+  margin-bottom: 100px;
+}
+
+iframe{
+  box-shadow: 10px 10px 5px #fca382;
 }
 
 /* Formatação do conteúdo da página "Sobre nós"*/
