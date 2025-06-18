@@ -168,6 +168,7 @@ a:visited {
   background-color: #fca382;
   color: #668c60;
   padding: 8px 18px;
+  border: 6px solid #fca382;
   border-radius: 25px;
   text-decoration: none;
 }
@@ -175,7 +176,7 @@ a:visited {
 /* Formatação do conteúdo da página "História"*/
 #vidraria {
   position: absolute;
-  top: 200px;
+  top: 10px;
   left: 0;
   height: auto;
   max-height: 20vh;
@@ -183,21 +184,21 @@ a:visited {
 }
 
 #silhueta {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
-  height: auto;
-  max-height: 58vh;
+  height: 48vh;
   z-index: -1;
+  opacity: 0.6;
 }
 
 #tabela-periodica {
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 1%;
   bottom: 0;
-  height: auto;
-  max-height: 98vh;
+  height: 98vh;
   z-index: -1;
+  opacity: 0.6;
 }
 
 .conteudo-historia {
@@ -290,6 +291,9 @@ iframe{
 
 /* Formatação do conteúdo da página "Sobre nós"*/
 .botao-sobre-selecionado {
+  white-space: nowrap;
+  display: inline-block; 
+  box-sizing: border-box;
   margin-left: 20px;
   background-color: #fca382;
   color: #668c60;
@@ -409,6 +413,14 @@ iframe{
   display: block;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
 form {
   margin: 20px 0;
 }
@@ -454,7 +466,7 @@ option, select {
 
 .enviar {
   font-family: now;
-  width: 30%;
+  width: 40%;
   padding: 15px 0;
   background-color: #fca382;
   color: #668c60;
@@ -504,8 +516,8 @@ option, select {
   }
 
   #categorias {
-    margin: 0; /* remove margens externas */
-    padding: 20px 20px; /* mesmo padding em cima e embaixo */
+    margin: 0; 
+    padding: 20px 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,17 +540,144 @@ option, select {
     font-size: 16px;
     padding: 10px 20px;
     margin: 0;
-    border-radius: 15px;
+    border-radius: 20px;
   }
 
-.lista_home:not(:last-child) {
-    margin-bottom: 20px;
-}
+  .lista_home:not(:last-child) {
+      margin-bottom: 20px;
+  }
 
   .lista_home a {
     white-space: normal; 
     display: inline; 
     text-align: left;
+  }
+
+
+  .header_historia .nav, .header_sobre .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .botao-sobre-selecionado {
+    width: 100%;
+    margin-left: 0;
+    white-space: normal; /* para permitir quebra no mobile */
+    text-align: center;
+  }
+
+  .menu li {
+    flex: 1 1 30%; /* Para caber 3 na primeira linha e 4 na segunda */
+    text-align: center;
+  }
+
+  .menu li a {
+    font-size: 16px;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  .botao-sobre {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #vidraria {
+    top: 10px;
+    display: block;
+    width: auto;
+    max-width: 120px;
+    max-height: 8vh;
+    margin: 0 auto 10px auto;
+  }
+
+  #silhueta {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 18vh;
+  z-index: -1;
+  opacity: 0.4;
+  }
+
+  #tabela-periodica {
+    position: fixed;
+    right: 1%;
+    bottom: 0;
+    height: 38vh;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  .mobile-only {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+  }
+
+  .mobile-only img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .desktop-only img{
+    display: none;
+  }
+
+  .quem-desenvolveu-container {
+    flex-direction: column !important; 
+    flex-wrap: nowrap !important; 
+    align-items: center;
+  }
+
+  .imagem-quem-desenvolveu {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .quem-desenvolveu-texto {
+    order: 0;
+    width: 100%;
+  }
+
+  .nome-quem-desenvolveu {
+    font-size: 1.5em; 
+  }
+
+  .titulo-quem-desenvolveu, .titulo-formulario, .titulo-contato { 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-position: center;
+  }
+
+  form label, form legend {
+    font-size: 15px;
+  }
+
+  .enviar {
+    width: 70%;
   }
 
   .input-padrao,
