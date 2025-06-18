@@ -644,6 +644,10 @@ option, select {
     display: none;
   }
 
+  .botao-sobre, .botao-sobre-selecionado {
+    width: 130px;
+  }
+
   .quem-desenvolveu-container {
     flex-direction: column !important; 
     flex-wrap: nowrap !important; 
