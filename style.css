@@ -281,7 +281,39 @@ a:visited {
 }
 
 .mapa-borges-da-costa {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.areacientista {
+  margin-bottom: 200px;
+}
+
+.boxcientista {
+  position: absolute;
+  animation: movimentar-cientista;
+  animation-duration: 8S;
+  animation-timing-function: linear;
+  animation-delay: 400ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+
+}
+
+.boxcientista:hover {
+  animation-play-state: paused;
+}
+
+@keyframes movimentar-cientista{
+  0% {
+    transform: translate(40vw, 0);
+  }
+  30% {
+    transform: translate(200%, 0px);
+  }
+  100% {
+    transform: translate(80vw, 0);
+  }
 }
 
 iframe{
