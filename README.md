@@ -67,9 +67,6 @@ Mulheres-na-ciencia/
 
 ---
 
-
----
-
 ## 📸 Miniatura do Projeto  
 
 ![Miniatura do site Mulheres na Ciência](./2fdd9d86-6c6c-4ea6-9e20-85e6ef284884.png)
@@ -113,5 +110,4 @@ Este projeto foi desenvolvido para fins **educacionais** e não possui fins come
 
 > ✨ *"Que a curiosidade e a coragem das mulheres continuem a transformar a ciência e o mundo."* ✨
 
-## 📂 Estrutura do Projeto  
 
