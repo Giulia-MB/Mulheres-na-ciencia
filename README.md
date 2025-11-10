@@ -1,6 +1,6 @@
 # 🌸 Mulheres na Ciência  
 
-![Prévia do site](./124ea5c6-038e-442d-9fa5-21856b2e1cef.png)
+<img width="1897" height="912" alt="image" src="https://github.com/user-attachments/assets/69c9c1cf-0c54-42dc-b1b6-320e4075a70a" />
 
 > **"Mulheres na Ciência"** é um site desenvolvido na disciplina de **Fundamentos de Web Design** com o objetivo de valorizar e divulgar as contribuições das mulheres na área científica.  
 > Criado com foco em **acessibilidade**, **design responsivo** e **representatividade feminina na ciência**.
